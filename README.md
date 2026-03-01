@@ -1,13 +1,74 @@
-This repository contains a Python implementation of the classic Mastermind code-breaking game, developed as Assignment 1 for the CSSE7030 course.
+Python Mastermind
 
-In this version of Mastermind, the computer generates a secret key made up of five digits chosen from 1 to 5, and the player has up to ten attempts to guess it. After each guess the game gives feedback using
+📌 About
 
-B (black) to indicate a correct digit in the correct position,
+Python Mastermind is a Python implementation of the classic code-breaking game Mastermind. This project was developed to demonstrate clear object-oriented design, modular structure, and effective use of automated tests.
 
-W (white) to indicate a correct digit in the wrong position.
+Players try to guess a hidden code within a limited number of turns. After each guess, the program provides feedback on how many colours are correct and in the correct position.
 
-Players can enter guesses in the required format (number,number,number,number,number), ask for a hint after three guesses, view help text, or quit at any time.
+This repository includes gameplay logic, user interaction components, and unit tests to validate core functionality.
 
-The main file (main.py) includes all gameplay logic: generating the board, validating and placing guesses, calculating and displaying feedback, and managing the game loop. Constants such as commands, messages and board formatting are defined in support.py. Randomness is seeded for consistent behaviour in testing and assessment.
+🎯 Features
 
-This project is designed to demonstrate fundamental Python programming skills including functions, lists, loops, modular code organisation, user input handling, and simple game logic.
+✔ Classic Mastermind gameplay
+✔ Clean Python OOP design
+✔ Modular code organisation
+✔ Input validation for smooth game flow
+✔ Automated unit tests
+✔ Easy to extend and customise
+
+🧪 Testing
+
+This project includes tests to ensure the Mastermind logic behaves correctly.
+
+Run Tests
+
+Using pytest:
+
+pip install pytest
+pytest
+
+This will discover and execute all tests in the tests/ directory.
+
+🕹️ How to Play
+
+1. Clone the repository:
+
+git clone https://github.com/Ivan53040/Python-Mastermind-.git
+
+2. Navigate to the project folder.
+
+3. Run the game:
+
+python mastermind.py
+
+4. Follow on-screen instructions to guess the hidden code.
+
+📂 Project Structure
+
+- mastermind.py – main program to run the game
+
+- game/ – core game logic and classes
+
+- display.py – handles user interaction and output
+
+- tests/ – tests for key functionality
+
+- support.py – helper utilities
+
+This separation of concerns improves readability and ease of maintenance.
+
+🧠 Design Principles
+
+- Object-oriented programming – classes and encapsulation
+
+- Modularity – logic separated into coherent modules
+
+- Test-driven approach – includes automated tests for reliability
+
+- User-friendly interaction – clear prompts and feedback
+
+
+👤 Author
+
+Developed with focus on clean design, testing, and Python best practices.
